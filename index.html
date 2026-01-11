@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>My Protfolio</title>
+</head>
+<body>
+    <header>
+        <h2>Chauhan Jenish</h2>
+        <!-- for mobile -->
+        <img src="./menu.png" alt="menu" class="menu-img">
+        <nav class="navbar">
+            <ul class="menu">
+                <h2>Chauhan Jenish</h2>
+                <p>web-devloper</p>
+                <li class="navbar-menu"><a href="#home">HOME</a></li>
+                <li class="navbar-menu"><a href="#contact">CONTACT</a></li>
+                <li class="navbar-menu"><a href="#skill">SKILLS</a></li>
+                <li class="navbar-menu"><a href="#project">PROJECT</a></li>
+            </ul>
+            <section class="close">
+                <p class="close-btn">X</p>
+            </section>
+        </nav>
+    </header><br>
+    <section class="hero-section" id="home">
+        <img src="./myphoto.jpeg" alt="My-Photo" class="myImg">
+        <h2>Chauhan Jenish</h2>
+        <h4>I'M &#128155;</h4>
+    </section><br>
+
+    <section class="project" id="project">
+        <center><h3>Projects</h3></center>
+        <div class="container">
+            <h2>My Protfolio</h2>
+            <p>Front-End:HTML,CSS,JS</p>
+        </div><br><br>
+        <div class="container">
+            <h2>Shoes e-commerce</h2>
+            <p>Front-End:HTML,CSS,JS</p>
+            <p>BACK-END:PHP</p>
+            <P>DATABASE:MySQL</P>
+        </div>
+    </section>
+    <br><br>
+    <section class="skills" id="skill">
+        <u><h3>Skills</h3></u><br>
+        <ul class="skill">
+            <li>HTML</li>
+            <li>CSS</li>
+            <li>JAVASCRIPT</li>
+            <li>REACT JS(BASIC)</li>
+            <li>PYTHON(BASIC)</li>
+        </ul>
+    </section>
+    <br><br>
+    
+    <section class="contact" id="contact">
+        <center><u><h3>Contact Me</h3></u></center><br>
+             <a href="https://github.com/chauhanjenish" target="_blank">
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg" alt="GitHub Logo" class="con-icon">
+            </a>
+
+            <a href="https://in.linkedin.com/in/jenish-chauhan-111780322">
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/linkedin/linkedin-original.svg" alt="LinkedIn Logo" class="con-icon">
+            </a>
+
+            <a href="chauhanjenish2006@gmail.com">
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/google/google-original.svg" alt="Email Logo" class="con-icon">
+            </a>
+    </section>
+    <br>
+     <footer>
+        &copy; 2026 Chauhan Jenish. All Rights Reserved.
+    </footer>
+</body>
+<script>
+const navbar = document.querySelector(".navbar");
+const btn = document.querySelector(".menu-img");
+const close=document.querySelector(".close-btn");
+
+btn.addEventListener("click", () => {
+    navbar.style.left = "1px";
+    btn.style.display = "none";
+});
+close.addEventListener("click",()=>{
+    navbar.style.left="-200px";
+    btn.style.display="block"
+})
+
+</script>
+</html>
