@@ -1,0 +1,317 @@
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html,body
+{
+    height: 100%;
+    width: 100%;
+}
+@media (min-width: 601px) {
+    header{
+        height: 10%;
+        width: 100%;
+        padding: 10px;
+        background-color: rgb(240, 237, 237);
+        backdrop-filter: blur(70px);
+        display: flex;
+        justify-content: space-between;
+        position: fixed;
+        z-index: 1000;
+    }
+    .navbar-menu{
+        display: flex;
+    }
+    .menu{
+        display: flex;
+    }
+    .navbar-menu a{
+        padding-top: 10px;
+        text-decoration: none;
+        color: black;
+        padding-left: 10px;
+        font: 1em sans-serif;
+        font-weight: 400;
+    }
+    .navbar-menu a:hover{
+        text-decoration: underline;
+    }
+    .navbar-menu a:active{
+        text-decoration: line-through;
+    }
+    .hero-section{
+        text-align: center;
+        background-color: blue;
+        color: white;
+        height: 100%;
+        padding-top:70px;
+    }
+    .hero-section h4::after{
+        content: "Web Devloper";
+        animation: aninm 2s infinite ease;
+    }
+    @keyframes aninm {
+        10%{
+            content: "Web Devloper";
+        }
+        30%{
+            content: "Web Design";
+            color: white;
+        }
+        50%{
+            content: "UI/UX";
+            color: pink;
+        }
+        100%
+        {
+            content: "Web Devloper";
+            color: yellow;
+        }
+    }
+    .myImg{
+        height: 80%;
+        border-radius: 25px;
+    }
+    .project{
+        display: flex;
+        flex-direction: column;
+        
+    }
+    .project  h3{
+        text-decoration: underline;
+        margin-bottom: 15px;
+    }
+    .container{
+        display: flex;
+        flex-direction: column;
+        border: 1px solid grey;
+        text-align: center;
+        width: fit-content;
+        padding: 20px;
+        margin-left: 95px;
+        border-radius: 20px;
+        box-shadow: 2px 2px 2px gray;
+        background: rgb(45, 45, 171);
+        color: white;
+        margin-left: 550px;
+    }
+     .skills{
+        text-align: center;
+    }
+    .skill li{
+        padding-bottom: 10px;
+        animation:skill 1.5s infinite ease-in-out;
+    }
+    @keyframes skill {
+        0%{
+            opacity: 1;
+        }
+        50%{
+            opacity: 0.5;
+        }
+        100%{
+            opacity: 0.1;
+        }
+    }
+    .contact{
+        text-align: center;
+        
+    }
+    .con-icon{
+        height: 50px;
+        width: 50px;
+        margin-left: 30px;
+    }
+    footer{
+        text-align: center;
+        background-color: black;
+        color: white;
+    }
+    .menu-img {
+        display: none; 
+    }
+    .close{
+
+        display: none;
+    }
+    .menu h2{
+        display: none;
+    }
+    .menu p{
+        display: none;
+    }
+}
+
+/* for mobile aproach */
+@media (max-width:600px){
+    *
+    {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    html,body
+    {
+        height: 100%;
+        width: 100%;
+    }
+    header{
+        display: flex;
+        justify-content: space-between;
+    }
+    .navbar{
+        text-align: right;
+        background-color: transparent;
+        backdrop-filter: blur(70px);
+        border-top-right-radius: 20px;
+        width: 40%;
+        height: 100vh;
+        position: fixed;
+        z-index: 1000;
+        left: -180px;
+        transition: left 0.3s ease-in-out;
+
+    }
+    .menu-img{
+        height: 50px;
+        width: 50px;
+        padding-bottom: 0px;
+        cursor: pointer;
+    }
+    .menu{
+        margin-top: 100px;
+        list-style-type: none;
+    }
+    .menu h2{
+        font-size: 20px;
+        padding-right: 5px;
+
+    }
+    .navbar-menu{
+        padding-top: 50px;
+        text-align: center;
+        align-items: center;
+        height: 100%;
+        
+    }
+    .navbar-menu a{
+        font: 1em sans-serif;
+        font-weight: 400;
+        text-decoration: none;
+        color: black;
+    }
+    .navbar-menu:hover
+    {
+        text-decoration: underline;
+    }
+    .navbar-menu:active{
+        text-decoration: line-through;
+    }
+    .close{
+        background-color: transparent;
+        backdrop-filter: blur(20px);
+        text-align: center;
+        margin-top: 200%;
+        font-size: 50px;
+        font-weight: 800;
+        align-items: baseline;
+    }
+    .close-btn:hover
+    {
+        color: red;
+    }
+    .hero-section{
+        background-color: blue;
+        height: 70%;
+        text-align: center;
+        color: white;
+    }
+    .myImg{
+        width: 90%;
+        margin-left: 10px;
+        margin-top: 20px;
+        border-radius: 20px;
+    }
+    .hero-section h4::after{
+        content: "Web Devloper";
+        animation: aninm 2s infinite ease;
+    }
+    @keyframes aninm {
+        30%{
+            content: "Web Design";
+            color: white;
+        }
+        50%{
+            content: "UI/UX";
+            color: pink;
+        }
+        100%
+        {
+            content: "Web Devloper";
+            color: yellow;
+        }
+    }
+    .project{
+        display: flex;
+        flex-direction: column;
+    }
+    .project  h3{
+        text-decoration: underline;
+        margin-bottom: 15px;
+    }
+    .container{
+        display: flex;
+        flex-direction: column;
+        border: 1px solid grey;
+        text-align: center;
+        width: fit-content;
+        padding: 20px;
+        margin-left: 95px;
+        border-radius: 20px;
+        box-shadow: 2px 2px 2px gray;
+        background: rgb(45, 45, 171);
+        color: white;
+    }
+    .container > h2{
+        color: hotpink;
+        padding-bottom: 5px;
+    }
+    .container > p{
+        font: 800;
+        line-height: 20px;
+    }
+    .skills{
+        text-align: center;
+    }
+    .skill li{
+        padding-bottom: 10px;
+        animation:skill 1.5s infinite ease-in-out;
+    }
+    @keyframes skill {
+        0%{
+            opacity: 1;
+        }
+        50%{
+            opacity: 0.5;
+        }
+        100%{
+            opacity: 0.1;
+        }
+    }
+     .contact{
+        text-align: center;
+        
+    }
+    .con-icon{
+        height: 50px;
+        width: 50px;
+        margin-left: 30px;
+    }
+    footer{
+        text-align: center;
+        background-color: black;
+        color: white;
+    }
+}
