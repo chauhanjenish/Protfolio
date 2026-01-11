@@ -213,7 +213,7 @@ html,body
         background-color: transparent;
         backdrop-filter: blur(20px);
         text-align: center;
-        margin-top: 90%;
+        margin-top: 70%;
         font-size: 30px;
         font-weight: 300;
         align-items: baseline;
@@ -316,3 +316,4 @@ html,body
     }
 
 }
+
