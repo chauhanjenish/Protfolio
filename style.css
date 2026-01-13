@@ -224,7 +224,7 @@ html,body
     }
     .hero-section{
         background-color: blue;
-        height: 70%;
+        height: 100%;
         text-align: center;
         color: white;
     }
@@ -316,4 +316,5 @@ html,body
     }
 
 }
+
 
